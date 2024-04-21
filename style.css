@@ -1,0 +1,142 @@
+:root {
+    --first: rgb(126, 75, 174);
+    --second: rgb(187, 37, 136);
+}
+
+body {
+    max-height: 100vh;
+    background-color: rgb(151, 222, 207);
+    font-family: sans-serif;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.loginbox {
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 10px;
+    height: 90vh;
+}
+
+.loginbox form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.loginbox form label {
+    font-weight: bold;
+    position: relative;
+    left: 25px;
+    margin-bottom: 10px;
+}
+
+.loginbox form input[type="text"],
+.loginbox form input[type="password"] {
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    background: #eee;
+    text-indent: 2em;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.loginbox form input:focus {
+    text-indent: 2em;
+    outline: none;
+}
+
+.loginbox form i {
+    position: relative;
+    left: 25px;
+}
+
+.loginbox .forget {
+    position: relative;
+    left: 140px;
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 100;
+    color: rgb(66, 66, 66);
+}
+
+.loginbox form input[type="submit"] {
+    color: #eee;
+    border: none;
+    background: linear-gradient(to right, var(--first), var(--second));
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.signup-btn {
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+}
+
+.signup-btn:hover {
+    font-weight: bold;
+}
+
+ul {
+    position: relative;
+    right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.4em;
+    position: relative;
+    top: 3px;
+}
+
+ul li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li:first-child {
+    background: rgb(12, 4, 117);
+    padding: 7px;
+    border-radius: 100%;
+}
+
+ul li:nth-child(2) {
+    background: rgb(52, 53, 213);
+    padding: 7px;
+    border-radius: 100%;
+}
+
+ul li:last-child {
+    background: rgb(210, 45, 12);
+    padding: 7px;
+    border-radius: 100%;
+}
