@@ -1,0 +1,214 @@
+:root {
+    --text-dark: hsl(240, 54%, 15%);
+    --text-light: hsl(242, 18%, 64%);
+    --primary: hsl(222, 98%, 60%);
+    --primary-lighter: hsl(240, 33%, 86%);
+    --primary-gradient: linear-gradient(
+        to left,
+        var(--primary),
+        var(--primary-lighter)
+    );
+    --secondary-gradient: linear-gradient(to right, #3671fd, #6f31ff);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    color: var(--text-dark);
+    font-family: sans-serif;
+}
+
+/* background side */
+.bg {
+    background: var(--primary-gradient);
+    height: 100vh;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg .bg-container {
+    height: auto;
+    padding: 20px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+.bg .bg-container h1 p {
+    display: inline;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+/* login side */
+.login {
+    flex: 2;
+}
+
+.login .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+    height: auto;
+    padding: 20px;
+    width: auto;
+}
+
+.login .login-container .login-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login .login-container .login-title p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.login .login-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45vw;
+    gap: 5px;
+}
+
+.login .login-container form label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.login .login-container form input[type="email"],
+.login .login-container form input[type="password"],
+.login .login-container form input[type="submit"],
+.login .login-container button {
+    width: 45vw;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.login .login-container button {
+    background: white;
+    color: var(--text-dark);
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.login .login-container button img {
+    width: 18px;
+}
+
+.login .login-container form input[type="submit"] {
+    background: var(--secondary-gradient);
+    color: #eee;
+    font-weight: bold;
+}
+
+.login .login-container form .check-container {
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login .login-container form .check-container a {
+    text-decoration: none;
+    color: #3671fd;
+    font-size: 13px;
+}
+.login .login-container .hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: var(--text-dark);
+    margin: 8px 0px;
+    width: 45vw;
+}
+.login .login-container .hr-sect::before,
+.login .login-container .hr-sect::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+}
+
+/* responsive section */
+@media (max-width: 760px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .bg .bg-container {
+        padding-left: 15vw;
+        padding-right: 15vw;
+        font-size: 0.9em;
+    }
+
+    .login .login-container {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+
+    .login .login-container form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 75vw;
+        gap: 5px;
+    }
+
+    .login .login-container form input[type="email"],
+    .login .login-container form input[type="password"],
+    .login .login-container form input[type="submit"],
+    .login .login-container button {
+        width: 75vw;
+        padding: 8px;
+    }
+
+    .login .login-container form .check-container {
+        width: 75vw;
+    }
+
+    .login .login-container .hr-sect {
+        width: 75vw;
+    }
+
+    .bg .bg-container h1 p {
+        display: inline;
+        color: var(--primary);
+        font-weight: bold;
+        font-size: 48px;
+    }
+}
