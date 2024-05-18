@@ -1,0 +1,513 @@
+:root {
+    --lrpadding: 30px;
+    --tbpadding: 30px;
+    --btn: rgb(147, 130, 245);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(225, 225, 225);
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* overflow-y: hidden; */
+    padding: var(--tbpadding) var(--lrpadding);
+}
+
+/* left */
+
+.left {
+    padding: var(--tbpadding) var(--lrpadding);
+    flex: 2;
+    height: 90vh;
+}
+
+.left .wrapper {
+    padding: var(--tbpadding) var(--lrpadding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.left .wrapper .signins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.left .wrapper .signins h1,
+.left .wrapper .signins p {
+    position: relative;
+    left: 1vw;
+}
+
+.left form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.left form .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.left h1 {
+    font-size: 22px;
+}
+
+.left p {
+    font-size: 12px;
+    color: rgb(129, 129, 129);
+}
+
+.left .google,
+.left .apple {
+    position: relative;
+    right: 1vw;
+}
+
+.left .google img,
+.left .apple img {
+    width: 20px;
+    position: relative;
+    top: 7px;
+    left: 10.5vw;
+}
+
+.left button {
+    padding: 7px;
+    width: 30vw;
+    background: inherit;
+    outline: none;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left .hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: var(--text-dark);
+    margin: 8px 0px;
+    width: 30vw;
+    font-size: 14px;
+}
+.left .hr-sect::before,
+.left .hr-sect::after {
+    font-weight: bold;
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+}
+
+.left form input[type="email"],
+.left form input[type="password"] {
+    padding: 7px;
+    width: 30vw;
+    background: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.left form input[type="submit"] {
+    cursor: pointer;
+    padding: 7px;
+    width: 30vw;
+    background: var(--btn);
+    outline: none;
+    border: 1px solid var(--btn);
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.left form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.left form .opts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7vw;
+}
+
+.left form .opts span {
+    font-size: 14px;
+}
+
+.left form .opts span,
+.left form .opts a {
+    flex: 1 1 0;
+}
+
+/* Right */
+
+.right {
+    flex: 2;
+    height: 90vh;
+    background-image: url(./assets/depositphotos_91822996-young-man-working-on-laptop.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: var(--tbpadding) var(--lrpadding);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .wrapper {
+    padding: var(--tbpadding) var(--lrpadding);
+    backdrop-filter: blur(5px);
+    background: rgba(225, 225, 225, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.right .wrapper h1 {
+    font-size: 20px;
+}
+
+.right .wrapper p {
+    font-size: 14px;
+}
+
+.right .wrapper img {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 2vw;
+}
+
+@media (max-width: 1200px) {
+    .left .google img,
+    .left .apple img {
+        width: 20px;
+        position: relative;
+        top: 7px;
+        left: 10vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    .left .google img,
+    .left .apple img {
+        width: 20px;
+        position: relative;
+        top: 7px;
+        left: 9.5vw;
+    }
+
+    .right .wrapper img {
+        width: 300px;
+        height: 150px;
+        position: relative;
+        left: 1vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .left .google img,
+    .left .apple img {
+        width: 20px;
+        position: relative;
+        top: 7px;
+        left: 9vw;
+    }
+
+    .right .wrapper img {
+        width: 250px;
+        height: 150px;
+        position: relative;
+        left: 1vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .left .google img,
+    .left .apple img {
+        width: 20px;
+        position: relative;
+        top: 30px;
+        left: 5vw;
+    }
+
+    .right .wrapper img {
+        width: 200px;
+        height: 150px;
+        position: relative;
+    }
+}
+
+@media (max-width: 800px) {
+    .left .google img,
+    .left .apple img {
+        width: 20px;
+        position: relative;
+        top: 30px;
+        left: 5vw;
+    }
+
+    .right .wrapper img {
+        width: 180px;
+        height: 150px;
+        position: relative;
+    }
+}
+
+@media (max-width: 780px) {
+    .right {
+        display: none;
+    }
+
+    .left .google img,
+    .left .apple img {
+        width: 20px;
+        position: relative;
+        top: 5px;
+        left: 20vw;
+    }
+
+    .left form input[type="email"],
+    .left form input[type="password"] {
+        padding: 7px;
+        width: 60vw;
+        background: #fff;
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .left form input[type="submit"] {
+        padding: 7px;
+        width: 60vw;
+        background: var(--btn);
+        outline: none;
+        border: 1px solid var(--btn);
+        border-radius: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .left button {
+        padding: 7px;
+        width: 60vw;
+        background: inherit;
+        outline: none;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .left .hr-sect {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: var(--text-dark);
+        margin: 8px 0px;
+        width: 60vw;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .right {
+        display: none;
+    }
+
+    .left .google img,
+    .left .apple img {
+        width: 20px;
+        position: relative;
+        top: 5px;
+        left: 15vw;
+    }
+
+    .left form input[type="email"],
+    .left form input[type="password"] {
+        padding: 7px;
+        width: 60vw;
+        background: #fff;
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .left form input[type="submit"] {
+        padding: 7px;
+        width: 60vw;
+        background: var(--btn);
+        outline: none;
+        border: 1px solid var(--btn);
+        border-radius: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .left button {
+        padding: 7px;
+        width: 60vw;
+        background: inherit;
+        outline: none;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .left .hr-sect {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: var(--text-dark);
+        margin: 8px 0px;
+        width: 60vw;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 520px) {
+    .right {
+        display: none;
+    }
+
+    .left .google img,
+    .left .apple img {
+        width: 20px;
+        position: relative;
+        top: 5px;
+        left: 10vw;
+    }
+
+    .left form input[type="email"],
+    .left form input[type="password"] {
+        padding: 7px;
+        width: 50vw;
+        background: #fff;
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .left form input[type="submit"] {
+        padding: 7px;
+        width: 50vw;
+        background: var(--btn);
+        outline: none;
+        border: 1px solid var(--btn);
+        border-radius: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .left button {
+        padding: 7px;
+        width: 50vw;
+        background: inherit;
+        outline: none;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .left .hr-sect {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: var(--text-dark);
+        margin: 8px 0px;
+        width: 50vw;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .right {
+        display: none;
+    }
+
+    .left .google img,
+    .left .apple img {
+        display: none;
+    }
+
+    .left form input[type="email"],
+    .left form input[type="password"] {
+        padding: 7px;
+        width: 60vw;
+        background: #fff;
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .left form input[type="submit"] {
+        padding: 7px;
+        width: 60vw;
+        background: var(--btn);
+        outline: none;
+        border: 1px solid var(--btn);
+        border-radius: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .left button {
+        padding: 7px;
+        width: 60vw;
+        background: inherit;
+        outline: none;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .left .hr-sect {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: var(--text-dark);
+        margin: 8px 0px;
+        width: 60vw;
+        font-size: 14px;
+    }
+}
