@@ -20,3 +20,9 @@ Sample 04 login page looks like as follows:
 ![1](https://github.com/MortezaGhoddousi/Login-page-HTML-CSS/assets/143504966/50218358-630f-48f0-b461-722fca42134c)
 
 ![2](https://github.com/MortezaGhoddousi/Login-page-HTML-CSS/assets/143504966/72b71b34-358c-4618-8e8e-6add822b7303)
+
+Sample 05 login page looks like as follows:
+
+![Untitled](https://github.com/MortezaGhoddousi/Login-page-HTML-CSS/assets/143504966/19c9ab73-3114-40e3-8857-1806fcc8d638)
+
+![2](https://github.com/MortezaGhoddousi/Login-page-HTML-CSS/assets/143504966/e002ed5b-314c-465b-b070-8c14d9a21ae0)
