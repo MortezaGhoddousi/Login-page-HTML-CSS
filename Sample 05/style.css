@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #ddd;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("./assets/studio-session8-3770-edit.jpg");
+    background-size: cover 100%;
+    background-position-x: center;
+    background-position-y: center;
+    backdrop-filter: brightness(50%);
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header */
+
+header .menu {
+    display: none;
+}
+
+header,
+footer {
+    padding: 1vh 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+header div,
+header nav ul,
+footer div,
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+header div h1 {
+    font-size: 1.1rem;
+}
+
+header nav a,
+footer nav a {
+    font-size: 0.8rem;
+}
+
+header nav li {
+    padding: 10px;
+    border-radius: 7px;
+    display: grid;
+    grid-row: center;
+    grid-column: center;
+}
+
+header nav li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* form  */
+
+main,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    width: 50vw;
+    height: 60vh;
+}
+
+form input:not(input[type="checkbox"], input[type="submit"]) {
+    width: 30vw;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    position: relative;
+    right: 15px;
+}
+
+form label img {
+    width: 20px;
+    position: relative;
+    top: 6px;
+    left: 18px;
+}
+
+form input:focus,
+form input::placeholder {
+    text-indent: 30px;
+}
+
+form input[type="submit"] {
+    width: 30vw;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(251, 100, 107);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form .password,
+form .signup {
+    width: 28vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .password section span,
+form .signup h2 {
+    font-size: 0.6rem;
+}
+
+form .password a {
+    position: relative;
+    top: 3px;
+    font-size: 0.6rem;
+}
+
+form .signup {
+    padding-top: 2vh;
+}
+
+form .signup h2:hover,
+form .password a:hover,
+footer nav li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer div p {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+
+    main {
+        width: 60vw;
+    }
+
+    form .password,
+    form .signup {
+        width: 50vw;
+    }
+
+    form input:not(input[type="checkbox"]) {
+        width: 50vw;
+    }
+
+    form .password a,
+    form .password section span,
+    form .signup h2 {
+        font-size: 0.8rem;
+    }
+
+    form .password section span {
+        position: relative;
+        top: -3.5px;
+    }
+
+    form .password a {
+        position: relative;
+        top: -2.5px;
+    }
+}
+
+@media (max-height: 320px) {
+    html {
+        font-size: 10px;
+    }
+
+    main {
+        width: 60vw;
+        position: relative;
+        top: -5vh;
+    }
+
+    form .password,
+    form .signup {
+        width: 50vw;
+    }
+
+    form input:not(input[type="checkbox"]) {
+        width: 50vw;
+    }
+
+    form .password section span {
+        position: relative;
+        top: -5px;
+    }
+
+    form .password a {
+        position: relative;
+        top: -4px;
+    }
+
+    form .password a,
+    form .password section span,
+    form .signup h2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-height: 1000px) {
+    main {
+        height: 70vh;
+    }
+
+    form {
+        gap: 25px;
+    }
+
+    footer p,
+    footer nav a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+    header .menu i {
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    main {
+        width: 60vw;
+        position: relative;
+        top: -5vh;
+    }
+
+    form .password,
+    form .signup {
+        width: 50vw;
+    }
+
+    form input:not(input[type="checkbox"]) {
+        width: 50vw;
+    }
+
+    form .password section span {
+        position: relative;
+        top: -5px;
+    }
+
+    form .password a {
+        position: relative;
+        top: -4px;
+    }
+
+    form .password a,
+    form .password section span,
+    form .signup h2 {
+        font-size: 0.8rem;
+    }
+}
