@@ -1,0 +1,199 @@
+:root {
+    --bg: rgb(64, 112, 244);
+    --btn: rgb(1, 113, 211);
+    --fb: rgb(66, 103, 178);
+    --secBg: rgb(255, 255, 255);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--secBg);
+    width: 30vw;
+    height: 70vh;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+article h1 {
+    text-transform: capitalize;
+    font-size: 36px;
+    opacity: 0.8;
+}
+
+article form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+article input {
+    width: 25vw;
+    padding: 15px;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+article input::placeholder {
+    text-transform: capitalize;
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+article input[type="submit"] {
+    background-color: var(--btn);
+    color: var(--secBg);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+article div {
+    position: relative;
+}
+
+article div label i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+article > div {
+    transform: translateY(-15px);
+}
+
+article > div p {
+    font-weight: bold;
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+article > div p a,
+#forget a {
+    text-decoration: none;
+    color: var(--btn);
+    text-transform: capitalize;
+}
+
+article aside {
+    position: relative;
+}
+
+article aside span {
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+
+article aside hr {
+    width: 10vw;
+    position: absolute;
+    opacity: 0.8;
+}
+
+article aside hr:first-child {
+    top: 50%;
+    left: 2.5vw;
+    transform: translateY(-50%);
+}
+
+article aside hr:last-child {
+    top: 50%;
+    right: 2.5vw;
+    transform: translateY(-50%);
+}
+
+img {
+    width: 20px;
+}
+
+article section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+article section div {
+    position: relative;
+}
+
+article section div button {
+    width: 25vw;
+    padding: 15px;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid var(--fb);
+    cursor: pointer;
+}
+
+article section div:first-child button {
+    background-color: var(--fb);
+    color: var(--secBg);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+article section div:first-child i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--secBg);
+    color: var(--btn);
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+article section div:last-child button {
+    background-color: var(--secBg);
+    border: 2px solid rgb(170, 170, 170);
+    color: rgb(170, 170, 170);
+    opacity: 1;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+article section div:last-child img {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
