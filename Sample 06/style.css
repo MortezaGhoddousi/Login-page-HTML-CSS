@@ -154,6 +154,7 @@ article section div button {
     outline: none;
     border: 2px solid var(--fb);
     cursor: pointer;
+    font-size: 16px;
 }
 
 article section div:first-child button {
@@ -161,7 +162,6 @@ article section div:first-child button {
     color: var(--secBg);
     text-transform: capitalize;
     font-weight: bold;
-    font-size: 16px;
 }
 
 article section div:first-child i {
@@ -188,7 +188,6 @@ article section div:last-child button {
     opacity: 1;
     text-transform: capitalize;
     font-weight: bold;
-    font-size: 16px;
 }
 
 article section div:last-child img {
@@ -196,4 +195,93 @@ article section div:last-child img {
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
+}
+
+@media (max-width: 1000px) {
+    article {
+        width: 40vw;
+    }
+
+    article input,
+    article section div button {
+        width: 35vw;
+    }
+
+    article aside hr {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 730px) {
+    article {
+        width: 50vw;
+    }
+
+    article input,
+    article section div button {
+        width: 45vw;
+    }
+
+    article aside hr {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 570px) {
+    article {
+        width: 60vw;
+    }
+
+    article input,
+    article section div button {
+        width: 55vw;
+    }
+
+    article aside hr {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 460px) {
+    article {
+        width: 70vw;
+    }
+
+    article input,
+    article section div button {
+        width: 65vw;
+    }
+
+    article aside hr {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 390px) {
+    article {
+        width: 90vw;
+    }
+
+    article input,
+    article section div button {
+        width: 85vw;
+    }
+
+    article aside hr {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 350px) {
+    article section div button {
+        font-size: 12px;
+    }
+
+    article input::placeholder {
+        font-size: 12px;
+    }
+
+    article > div p {
+        font-size: 12px;
+    }
 }
